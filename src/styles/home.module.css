@@ -1,6 +1,7 @@
 .background{
   background-color: rgb(35,66,87);
   min-height: 100vh;
+  min-width:fit-content;
 }
 
 .h1Title{
@@ -15,7 +16,6 @@
 
 .header{
   font-size: 20px;
-  padding: 10px 100px;
   display: flex;
   justify-content: space-between;
   background-color: rgb(137,178,174);
@@ -23,7 +23,7 @@
 
 .header a {
   text-decoration: none;
-  margin-left: 20px;
+  margin: 10px 10px 0 10px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color:rgb(99,43,108);
 }
@@ -124,4 +124,42 @@ a:visited {color:rgb(35,66,87)}
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.contactDescription{
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px;
+  color: rgb(35,66,87);
+  text-align: center;
+}
+
+@media screen and (min-width: 300px) and (max-width: 900px) {
+  /* Add styles for screens with a width between 601 pixels and 900 pixels */
+  .eachCard{
+    width: 250px;
+    height: 200px;
+  }
+  .projectImg{
+    display: none;
+  }
+
+  .contactBox{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+  }
+
+  .contactDescription{
+    display: none;
+  }
+
+  .contactLogo {
+    width: 80px;
+    height: 80px;
+  }
 }

@@ -1,11 +1,11 @@
 import styles from '../styles/home.module.css'
 
-const ContactInfo = ({info,link,image}) => (
+const ContactInfo = ({ info, link, image }) => (
     <div className={styles.contactBox}>
-        <p className={styles.description}> 
-            <a href={link} target='_blank' rel='noopener noreferrer' className={styles.projectLink}> {info} </a>
-        </p>
-            <img src={image} className='contactLogo'/>
+      <a href={link} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+        <p className={styles.contactDescription}>{info}</p>
+        <img src={image} alt={info} className={styles.contactLogo} />
+      </a>
     </div>
-)
+  )
 export default ContactInfo
