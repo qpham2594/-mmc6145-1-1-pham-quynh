@@ -1,4 +1,5 @@
 import styles from '../styles/home.module.css'
+import photo from '../images/filmphoto.jpeg'
 
 export default function About() {
   return (
@@ -8,6 +9,7 @@ export default function About() {
       <div className= {styles.mainContent}>
       <h1 className={styles.h1Title}>Everything You Need to Know About Me </h1>
       <br/>
+        <img className={styles.photo} src={photo}/>
         <p className={styles.aboutParagraph}> Hi there! Thank you for stopping by. It really means a lot to me that you choose to be here to look through my portfolio.
         After spending almost a decade in healthcare, I decided to change career path to something I am interested in rather than following the flow of what others tell me
         I should do. The turning point for me was really when my dad passed while I was in pharmacy school - I don't want to live my life till my death bed wondering what 

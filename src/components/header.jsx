@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import favicon from '../images/fav.png'
-
 import styles from '../styles/home.module.css'
 
 export default function Header() {
