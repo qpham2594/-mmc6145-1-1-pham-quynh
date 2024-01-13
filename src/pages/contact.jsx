@@ -1,4 +1,8 @@
 import styles from '../styles/home.module.css'
+import ContactInfo from '../components/contactCard'
+import Github from '../images/github.png'
+import LinkedIn from '../images/linkedin.png'
+import CodePen from '../images/codepen.png'
 
 export default function Contact() {
   return (
@@ -6,25 +10,23 @@ export default function Contact() {
       <header/>
       <br/><br/>
       <div className= {styles.mainContent}>
-          <h1 className={styles.placeholder}> Contact Information </h1> <br/><br/>
+          <h1 className={styles.h1Title}> Contact Information </h1> <br/><br/>
             <div className={styles.projectContainer}> 
-                <div className={styles.contactBox}>
-                  <p className={styles.description}> 
-                    <a href='https://github.com/qpham2594' target='_blank' rel='noopener noreferrer'> Github Repository </a>
-                  </p>
-                </div>
-                
-                <div className={styles.contactBox}>
-                  <p className={styles.description}> 
-                    <a href='https://www.linkedin.com/in/quynh-pham-2b32911a4/' target='_blank' rel='noopener noreferrer'> LinkedIn Profile </a>
-                  </p>
-                </div>
-
-                <div className={styles.contactBox}>
-                  <p className={styles.description}> 
-                    <a href='https://codepen.io/qpham2594' target='_blank' rel='noopener noreferrer'> CodePen Profile </a>
-                  </p>
-                </div>
+              <ContactInfo
+                  link='https://github.com/qpham2594'
+                  info='Github Repository'
+                  image={Github}
+              />
+              <ContactInfo
+                  link='https://www.linkedin.com/in/quynh-pham-2b32911a4/'
+                  info='LinkedIn Profile'
+                  image={LinkedIn}
+              />
+              <ContactInfo
+                  link='https://codepen.io/qpham2594' 
+                  info='CodePen Profile'
+                  image={CodePen}
+              />
               </div>
         </div>
     </main>

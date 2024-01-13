@@ -6,7 +6,7 @@ export default function About() {
      <header/>
       <br/><br/>
       <div className= {styles.mainContent}>
-      <h1 className={styles.placeholder}>Everything You Need to Know About Me </h1>
+      <h1 className={styles.h1Title}>Everything You Need to Know About Me </h1>
       <br/>
         <p className={styles.aboutParagraph}> Hi there! Thank you for stopping by. It really means a lot to me that you choose to be here to look through my portfolio.
         After spending almost a decade in healthcare, I decided to change career path to something I am interested in rather than following the flow of what others tell me
